@@ -5,11 +5,11 @@ const Ledger = () => {
 
   const [state, setState] = useContext(LedgerState);
 
-  console.log(state)
+  console.log(JSON.stringify([...state]))
 
   return (
-    <div className="App-ledger">
-      <p>{JSON.stringify(state)}</p>
+    <div className="App-ledger" align="left">
+      <pre>{JSON.stringify([...state], null, '\t')}</pre>
     </div>
   );
 };
