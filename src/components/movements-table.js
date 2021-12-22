@@ -27,7 +27,7 @@ const MovementsTable = ({ defaultRowsNumber }) => {
         <TableBody>
           {rowNumber.map((row) => (
             <TableRow key={row}>
-              {columns.map((column) => (<TableCell align="left" sx={{ border: '1px solid grey' }} id={column + "_" + row}><InputCell column={column}></InputCell></TableCell>))}
+              {columns.map((column) => (<TableCell align="left" sx={{ border: '1px solid grey' }} id={column + "_" + row}><InputCell column={column} row={row}></InputCell></TableCell>))}
             </TableRow>
           ))}
         </TableBody>
