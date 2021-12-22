@@ -1,4 +1,6 @@
 import './App.css';
+import Ledger from './components/ledger'
+import MovementsTable from './components/movements-table'
 
 function App() {
   return (
@@ -9,9 +11,13 @@ function App() {
           <button>Menu 2</button>
           <button>Menu 3</button>
         </div>
-        <div className="App-logic">
-          <div className="App-movements-table">teste</div>
-          <div className="App-ledger">teste 2</div>
+        <div className="logic-container">
+          <div className="movements-container">
+            <MovementsTable defaultRowsNumber={10}></MovementsTable>
+          </div>
+          <div className="ledger-container">
+            <Ledger></Ledger>
+          </div>
         </div>
       </div>
     </div>
