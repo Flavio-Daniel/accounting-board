@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-container {
   background-color: #282c34;
   color: white;
@@ -28,57 +23,67 @@
   background-color: #282c34;
   display: grid;
   grid-template-columns: 40% 60%;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .movements-container {
   background-color: #343a46;
-  min-height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.movements {
-  background-color: #343a46;
-  min-height: 200vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.ledger-container {
-  background-color: #202631;
-  min-height: 200vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.ledger {
-  background-color: #202631;
-  min-height: 200vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
+  min-height: auto;
 }
 
 .TextField-without-border-radius fieldset {
   border: 0;
   padding: 0;
+}
+
+.ledger-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  background-color: #202631;
+  min-height: auto;
+  font-size: calc(10px + 2vmin);
+  padding: 5px;
+}
+
+.account-container {
+  background-color: #202631;
+  padding: 5px;
+
+}
+
+.account-header {
+  background-color: white;
+  border-bottom: 2px solid black;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.account-movements {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.account-debits {
+  background-color: white;
+  border-right: 1px solid black;
+}
+
+.account-credits {
+  background-color: white;
+  border-left: 1px solid black;
 }

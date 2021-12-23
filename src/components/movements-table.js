@@ -6,7 +6,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import InputCell from '../components/empty-cell'
+import InputCell from './input-cell'
 
 const MovementsTable = ({ defaultRowsNumber }) => {
 
@@ -15,7 +15,7 @@ const MovementsTable = ({ defaultRowsNumber }) => {
 
   const table =
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} size="small" stickyHeader
+      <Table size="small" stickyHeader
       id="movements"
       >
         {/* todo: maybe the table head and body could be different components */}

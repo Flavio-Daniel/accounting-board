@@ -3,13 +3,13 @@ import TextField from '@mui/material/TextField';
 import LedgerState from '../contexts/ledger-state'
 
 const UpdateMap = (state, row, content) => {
-  let stateContent = state.get(row)
+  const stateContent = state.get(row)
 
   if (stateContent == undefined) {
     return state.set(row, content)
   } 
   else {
-    let updatedContent = {...stateContent, ...content}
+    const updatedContent = {...stateContent, ...content}
     return state.set(row, updatedContent)
   }
 } 
